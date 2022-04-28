@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "@fontsource/courgette": "^4.5.7",
+    "@fontsource/inter": "^4.5.7",
     "@fontsource/raleway": "^4.5.5",
     "@headlessui/react": "^1.6.0",
     "@heroicons/react": "^1.0.6",

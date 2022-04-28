@@ -240,6 +240,11 @@
   resolved "https://registry.yarnpkg.com/@fontsource/courgette/-/courgette-4.5.7.tgz#1edef5edc74d94f17729f5ae4e6d945e3ba2d56f"
   integrity sha512-XeDREBFkn9DqVJC357qR8xzrv76aCahVVOqMzk+ajmcxMOCFASAykcW3pHGMiZE9v/5KUE31Zt7bWrx/o9z/AQ==
 
+"@fontsource/inter@^4.5.7":
+  version "4.5.7"
+  resolved "https://registry.yarnpkg.com/@fontsource/inter/-/inter-4.5.7.tgz#f0657c52105ed51e04ac636a25d6016896c5ee9d"
+  integrity sha512-25k3thupaOEBexuU+jAkGqieKPbuhSuA+sinDwp1iBNhqQPiJ9QHDvsXgoCgCbZ4sGlE8aCwZmSlDJrPdJHNkw==
+
 "@fontsource/raleway@^4.5.5":
   version "4.5.5"
   resolved "https://registry.yarnpkg.com/@fontsource/raleway/-/raleway-4.5.5.tgz#0540aeb025190bdc9bf59669fcffbc95d3b7dc8b"

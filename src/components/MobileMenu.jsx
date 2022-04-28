@@ -44,15 +44,17 @@ const MobileMenu = () => {
                         <div className='mt-6'>
                             <nav className='grid gap-y-8'>
                                 {moreBylesbrowns.map(item => (
-                                    <a
+                                    <Link
                                         key={item.name}
-                                        href={item.href}
-                                        className='-m-3 p-3 flex items-center rounded-md hover:bg-gray-50'
+                                        to={item.href}
+                                        className='-m-3 p-3 flex items-center cursor-pointer rounded-md hover:bg-gray-50'
+                                        smooth
+                                        duration={500}
                                     >
                                         <span className='ml-3 text-base font-medium text-gray-900'>
                                             {item.name}
                                         </span>
-                                    </a>
+                                    </Link>
                                 ))}
                             </nav>
                         </div>
@@ -62,12 +64,16 @@ const MobileMenu = () => {
                             <Link
                                 to='#'
                                 className='text-base cursor-pointer  font-medium text-black hover:text-yellow-400 transition-colors duration-150 ease-in-out'
+                                smooth
+                                duration={500}
                             >
                                 How Do We Get Stuck?
                             </Link>
                             <Link
                                 to='#'
                                 className='text-base  cursor-pointer font-medium text-black hover:text-yellow-400 transition-colors duration-150 ease-in-out'
+                                smooth
+                                duration={500}
                             >
                                 Quotable Clothing
                             </Link>

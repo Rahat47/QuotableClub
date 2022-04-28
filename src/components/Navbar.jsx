@@ -84,6 +84,8 @@ export default function Navbar() {
                                                                 key={item.name}
                                                                 to={item.href}
                                                                 className='-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50'
+                                                                smooth
+                                                                duration={500}
                                                             >
                                                                 <div className='ml-4'>
                                                                     <p className='text-base font-medium text-gray-900'>
@@ -106,12 +108,16 @@ export default function Navbar() {
                         <Link
                             to='#'
                             className='text-base cursor-pointer  font-medium text-white hover:text-yellow-400 transition-colors duration-150 ease-in-out'
+                            smooth
+                            duration={500}
                         >
                             How Do We Get Stuck?
                         </Link>
                         <Link
                             to='#'
                             className='text-base  cursor-pointer font-medium text-white hover:text-yellow-400 transition-colors duration-150 ease-in-out'
+                            smooth
+                            duration={500}
                         >
                             Quotable Clothing
                         </Link>

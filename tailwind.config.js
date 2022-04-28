@@ -7,7 +7,8 @@ module.exports = {
     extend: {
       fontFamily: {
         courgette: '"Courgette", cursive',
-        raleway: '"Raleway", sans-serif'
+        raleway: '"Raleway", sans-serif',
+        inter: '"Inter", sans-serif',
       }
     },
   },
