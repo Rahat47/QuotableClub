@@ -1,22 +1,43 @@
+import { motion } from 'framer-motion';
+
 export default function Example() {
     return (
         <section
-            className='h-screen flex justify-center items-center max-w-6xl mx-auto px-4'
+            className=' mx-auto flex max-w-6xl items-center justify-center py-32 px-4 md:py-36'
             id='home'
         >
             <div className='text-center'>
-                <h1 className='text-5xl tracking-tight font-courgette text-white sm:text-5xl md:text-9xl'>
+                <motion.h1
+                    whileInView={{
+                        opacity: [0, 0.5, 1],
+                        scale: [0.9, 1],
+                        transition: {
+                            duration: 1,
+                        },
+                    }}
+                    className='font-courgette text-7xl tracking-tight text-white md:text-9xl'
+                >
                     <span className='block xl:inline'>"Better Than Good</span>{' '}
                     <span className='block text-yellow-500 xl:inline'>
                         Better Than Most"
                     </span>
-                </h1>
-                <div className='mt-20 w-full justify-center flex flex-col items-center'>
-                    <div className='w-20 h-1 bg-white' />
+                </motion.h1>
+                <div className='mt-20 flex w-full flex-col items-center justify-center'>
+                    <div className='h-1 w-20 bg-white' />
 
-                    <h3 className='text-white font-raleway mt-10 font-semibold uppercase text-4xl tracking-widest'>
+                    <motion.h3
+                        whileInView={{
+                            opacity: [0, 0.5, 1],
+                            y: [0, -10, 0],
+                            transition: {
+                                duration: 1,
+                                delay: 0.5,
+                            },
+                        }}
+                        className='mt-10 font-raleway text-4xl font-semibold uppercase tracking-widest text-white'
+                    >
                         Les Brown
-                    </h3>
+                    </motion.h3>
                 </div>
             </div>
         </section>

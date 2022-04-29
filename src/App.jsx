@@ -1,6 +1,8 @@
+import Divider from './components/Divider';
 import Navbar from './components/Navbar';
 import Banner from './sections/Banner';
 import Featured from './sections/Featured';
+import FeaturedTwo from './sections/FeaturedTwo';
 import Footer from './sections/Footer';
 import MoreFeatured from './sections/MoreFeatured';
 import StoreCTA from './sections/StoreCTA';
@@ -12,6 +14,8 @@ function App() {
             <Banner />
             <Featured />
             <MoreFeatured />
+            <FeaturedTwo />
+            <Divider />
             <StoreCTA />
             <Footer />
         </main>

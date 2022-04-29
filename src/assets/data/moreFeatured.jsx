@@ -79,4 +79,87 @@ export const moreFeatured = [
             </>
         ),
     },
+    {
+        id: 4,
+        title: 'Join Kindle Unlimited',
+        image: 'https://lh5.googleusercontent.com/hQQtNOGhhuJT3KgsSdB-7y_cf-iZhg_iDpXBp0JAtmSS1-Z23SHfUHPnVZhMbp6selRVqs4hE4IQFxxw793wWBa2n4vSaVMIuIXj5a3kKuFxWRgrxffVvwUNlER_Y5iHVw=w1280',
+        link: 'https://www.amazon.com/kindle-dbs/hz/subscribe/ku?linkCode=pf4&linkId=43c9173cd454eb57c0185f4a1d04113d&_encoding=UTF8&ref_=assoc_tag_ph_1454291293420&tag=fnbooster-20&creative=9325&camp=1789&shoppingPortalEnabled=true',
+        children: () => (
+            <>
+                <a
+                    href='https://www.google.com/url?q=https%3A%2F%2Famzn.to%2F3Ofcpxj&sa=D&sntz=1&usg=AOvVaw2npFplC07hMkEOoYahjBUc'
+                    className='text-yellow-400 hover:text-yellow-500'
+                    target='_blank'
+                    rel='noopener noreferrer'
+                >
+                    See Kindle Unlimited 6, 12 and 24-month membership plans{' '}
+                </a>{' '}
+                <br />
+                <br />
+                *Unlimited reading from over 1 million ebooks *Unlimited
+                <br />
+                <br />
+                listening to thousands of audiobooks *Read on any device
+                <br />
+                <br />
+                *Membership plans are also giftable
+            </>
+        ),
+    },
+
+    {
+        id: 5,
+        title: 'Listen to Les Brown: Greatest Hits',
+        image: 'https://lh5.googleusercontent.com/UebKCTKgk3WwnxWRYljWyNmniPbktRfKTq0_bxS9Rrg9J-iDRXpCpq6L_9XtqoB0UbPVDa60GyebtKXsqNvINR0=w1280',
+        link: 'https://www.google.com/url?q=https%3A%2F%2Fgeni.us%2FBest_of_Les_Music&sa=D&sntz=1&usg=AOvVaw3Vt7UoTyeXcMJsuRW5EIKL',
+        children: () => (
+            <>
+                Feeding your mind with Les Brown's unique brand of positive
+                motivation will empower you to shed your excuses and unwrap your
+                greatness.
+                <br />
+                <br />
+                <a
+                    href='https://www.google.com/url?q=https%3A%2F%2Famzn.to%2F3Ofcpxj&sa=D&sntz=1&usg=AOvVaw2npFplC07hMkEOoYahjBUc'
+                    className='text-yellow-400 hover:text-yellow-500'
+                    target='_blank'
+                    rel='noopener noreferrer'
+                >
+                    Through this extraordinary collection
+                </a>
+                , you will learn the importance of attitude, setting goals, and
+                creating a powerful personal vision to guide you on your
+                journey.
+                <br />
+                <br />
+                With the tools you'll gain in this program, your life of
+                greatness is just one step away.
+            </>
+        ),
+    },
+
+    {
+        id: 6,
+        title: 'Join Prime Music',
+        image: 'https://dummyimage.com/722x402',
+        link: 'https://www.google.com/url?q=https%3A%2F%2Famzn.to%2F3Mduudd&sa=D&sntz=1&usg=AOvVaw2uwXi-O2YU5AX6-q26FHDW',
+        children: () => (
+            <>
+                sign up for Amazon Prime Music 30-day Free Trials. Our
+                membership program offers special benefits including:
+                <br />
+                <br />
+                *Unlimited, ad-free streaming of over a million songs
+                <br />
+                <br />
+                *Instant streaming of thousands of movies and TV shows
+                <br />
+                <br />
+                *FREE two-day shipping (no minimum order size)
+                <br />
+                <br />
+                *Borrow Kindle books
+            </>
+        ),
+    },
 ];

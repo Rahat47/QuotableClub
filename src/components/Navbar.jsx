@@ -106,7 +106,7 @@ export default function Navbar() {
                         </Popover>
 
                         <Link
-                            to='#'
+                            to='stuck'
                             className='text-base cursor-pointer  font-medium text-white hover:text-yellow-400 transition-colors duration-150 ease-in-out'
                             smooth
                             duration={500}
@@ -114,7 +114,7 @@ export default function Navbar() {
                             How Do We Get Stuck?
                         </Link>
                         <Link
-                            to='#'
+                            to='clothing'
                             className='text-base  cursor-pointer font-medium text-white hover:text-yellow-400 transition-colors duration-150 ease-in-out'
                             smooth
                             duration={500}
