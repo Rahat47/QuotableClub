@@ -13,12 +13,7 @@ const Featured = () => {
                 >
                     LES BROWN QUOTE
                 </motion.h1>
-                <motion.div
-                    className='aspect-video'
-                    whileHover={{
-                        scale: [1, 1.02, 1],
-                    }}
-                >
+                <div className='aspect-video'>
                     <iframe
                         width='560'
                         height='315'
@@ -28,7 +23,7 @@ const Featured = () => {
                         allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
                         allowFullScreen
                     ></iframe>
-                </motion.div>
+                </div>
                 <div className='mt-20 flex flex-col items-center text-center md:w-1/2 lg:flex-grow'>
                     <motion.h1
                         whileInView={{

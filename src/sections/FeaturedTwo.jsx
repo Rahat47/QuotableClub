@@ -13,12 +13,7 @@ const FeaturedTwo = () => {
                 >
                     How Do We Get Stuck?
                 </motion.h1>
-                <motion.div
-                    whileHover={{
-                        scale: [1, 1.02, 1],
-                    }}
-                    className='aspect-video rounded-lg border border-yellow-300'
-                >
+                <div className='aspect-video rounded-lg border border-yellow-300'>
                     <iframe
                         width='560'
                         height='315'
@@ -29,7 +24,7 @@ const FeaturedTwo = () => {
                         allowFullScreen
                         className='rounded-lg'
                     ></iframe>
-                </motion.div>
+                </div>
                 <div className='mt-20 flex flex-col items-center text-center md:w-1/2 lg:flex-grow'>
                     <motion.a
                         className='mb-4 font-raleway text-3xl font-medium text-yellow-400'
