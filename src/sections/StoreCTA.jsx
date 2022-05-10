@@ -1,5 +1,6 @@
 import clothingimg from '../assets/images/clothing.jpg';
 import { motion } from 'framer-motion';
+import ClothingSlider from './ClothingSlider';
 
 const StoreCTA = () => {
     return (
@@ -14,14 +15,15 @@ const StoreCTA = () => {
                 >
                     Quotable Clothing
                 </motion.h1>
-                <a
+                {/* <a
                     href='https://www.bonfire.com/store/quotable-clothing/'
                     target='_blank'
                     rel='noopener noreferrer'
                     className='max-w-md rounded-lg border border-yellow-300'
                 >
                     <img src={clothingimg} alt='clothing img' />
-                </a>
+                </a> */}
+                <ClothingSlider />
                 <div className='mt-20 flex flex-col items-center text-center md:w-1/2 lg:flex-grow'>
                     <a
                         className='mb-4 font-raleway text-3xl font-medium text-yellow-400'

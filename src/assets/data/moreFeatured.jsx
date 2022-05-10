@@ -1,8 +1,15 @@
+import audioCollection from '../images/audiocollection.jpeg';
+import audible from '../images/audible.png';
+import poster from '../images/poster.jpeg';
+import kindle from '../images/kindle.jpeg';
+import greatestHits from '../images/greatesthits.jpeg';
+import primeMusic from '../images/primemusic.jpeg';
+
 export const moreFeatured = [
     {
         id: 1,
         title: 'The Best Of Les Brown: Audio Collection',
-        image: 'https://dummyimage.com/722x402',
+        image: audioCollection,
         link: 'https://www.google.com/url?q=https%3A%2F%2Fgeni.us%2FBest_of_Les&sa=D&sntz=1&usg=AOvVaw08ThZgPxnKBfw35lNgw9jW',
         children: () => (
             <>
@@ -27,7 +34,7 @@ export const moreFeatured = [
     {
         id: 2,
         title: 'Join Audible',
-        image: 'https://dummyimage.com/722x402',
+        image: audible,
         link: 'https://www.google.com/url?q=https%3A%2F%2Famzn.to%2F3McZnyq&sa=D&sntz=1&usg=AOvVaw0aSF8_BjifMTsS07KxiqZv',
         children: () => (
             <>
@@ -59,7 +66,7 @@ export const moreFeatured = [
     {
         id: 3,
         title: 'You’ve Got To Be HUNGRY:',
-        image: 'https://dummyimage.com/722x402',
+        image: poster,
         link: 'https://www.google.com/url?q=https%3A%2F%2Fgeni.us%2FLes_BookHungry&sa=D&sntz=1&usg=AOvVaw2x0VN2oKLgo5dV3RJcxDRN',
         children: () => (
             <>
@@ -82,7 +89,7 @@ export const moreFeatured = [
     {
         id: 4,
         title: 'Join Kindle Unlimited',
-        image: 'https://lh5.googleusercontent.com/hQQtNOGhhuJT3KgsSdB-7y_cf-iZhg_iDpXBp0JAtmSS1-Z23SHfUHPnVZhMbp6selRVqs4hE4IQFxxw793wWBa2n4vSaVMIuIXj5a3kKuFxWRgrxffVvwUNlER_Y5iHVw=w1280',
+        image: kindle,
         link: 'https://www.amazon.com/kindle-dbs/hz/subscribe/ku?linkCode=pf4&linkId=43c9173cd454eb57c0185f4a1d04113d&_encoding=UTF8&ref_=assoc_tag_ph_1454291293420&tag=fnbooster-20&creative=9325&camp=1789&shoppingPortalEnabled=true',
         children: () => (
             <>
@@ -110,7 +117,7 @@ export const moreFeatured = [
     {
         id: 5,
         title: 'Listen to Les Brown: Greatest Hits',
-        image: 'https://lh5.googleusercontent.com/UebKCTKgk3WwnxWRYljWyNmniPbktRfKTq0_bxS9Rrg9J-iDRXpCpq6L_9XtqoB0UbPVDa60GyebtKXsqNvINR0=w1280',
+        image: greatestHits,
         link: 'https://www.google.com/url?q=https%3A%2F%2Fgeni.us%2FBest_of_Les_Music&sa=D&sntz=1&usg=AOvVaw3Vt7UoTyeXcMJsuRW5EIKL',
         children: () => (
             <>
@@ -137,11 +144,10 @@ export const moreFeatured = [
             </>
         ),
     },
-
     {
         id: 6,
         title: 'Join Prime Music',
-        image: 'https://dummyimage.com/722x402',
+        image: primeMusic,
         link: 'https://www.google.com/url?q=https%3A%2F%2Famzn.to%2F3Mduudd&sa=D&sntz=1&usg=AOvVaw2uwXi-O2YU5AX6-q26FHDW',
         children: () => (
             <>

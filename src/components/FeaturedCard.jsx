@@ -15,7 +15,7 @@ const FeaturedCard = ({ link, image, title, children, id }) => {
         >
             <div className='h-full overflow-hidden rounded-lg border-2 border-gray-200 border-opacity-60'>
                 <img
-                    className='h-96 w-full object-cover object-center'
+                    className='h-96 w-full bg-black object-contain object-center'
                     src={image}
                     alt='blog'
                 />
