@@ -1,7 +1,9 @@
 import audioCollection from '../images/audiocollection.jpeg';
-import audible from '../images/audible.png';
+// import audible from '../images/audible.png';
+import audibleNew from '../images/audibleNew.jpeg';
 import poster from '../images/poster.jpeg';
 import kindle from '../images/kindle.jpeg';
+import kindleUnlimited from '../images/kindleUnlimited.png';
 import greatestHits from '../images/greatesthits.jpeg';
 import primeMusic from '../images/primemusic.jpeg';
 
@@ -34,7 +36,7 @@ export const moreFeatured = [
     {
         id: 2,
         title: 'Join Audible',
-        image: audible,
+        image: audibleNew,
         link: 'https://www.google.com/url?q=https%3A%2F%2Famzn.to%2F3McZnyq&sa=D&sntz=1&usg=AOvVaw0aSF8_BjifMTsS07KxiqZv',
         children: () => (
             <>
@@ -89,11 +91,11 @@ export const moreFeatured = [
     {
         id: 4,
         title: 'Join Kindle Unlimited',
-        image: kindle,
+        image: kindleUnlimited,
         link: 'https://www.amazon.com/kindle-dbs/hz/subscribe/ku?linkCode=pf4&linkId=43c9173cd454eb57c0185f4a1d04113d&_encoding=UTF8&ref_=assoc_tag_ph_1454291293420&tag=fnbooster-20&creative=9325&camp=1789&shoppingPortalEnabled=true',
         children: () => (
             <>
-                <a
+                {/* <a
                     href='https://www.google.com/url?q=https%3A%2F%2Famzn.to%2F3Ofcpxj&sa=D&sntz=1&usg=AOvVaw2npFplC07hMkEOoYahjBUc'
                     className='text-yellow-400 hover:text-yellow-500'
                     target='_blank'
@@ -109,7 +111,12 @@ export const moreFeatured = [
                 listening to thousands of audiobooks *Read on any device
                 <br />
                 <br />
-                *Membership plans are also giftable
+                *Membership plans are also giftable */}
+                <img
+                    src={kindle}
+                    alt='kindle details'
+                    className='mx-auto w-1/2 object-contain'
+                />
             </>
         ),
     },
