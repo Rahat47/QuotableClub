@@ -6,10 +6,16 @@ import FeaturedTwo from './sections/FeaturedTwo';
 import Footer from './sections/Footer';
 import MoreFeatured from './sections/MoreFeatured';
 import StoreCTA from './sections/StoreCTA';
+import bannerImg from './assets/images/banner.png';
 
 function App() {
     return (
-        <main className='bg-black'>
+        <main className='bg-black pt-36'>
+            <img
+                src={bannerImg}
+                alt='banner img'
+                className='fixed inset-x-0 top-0 z-50 w-full md:h-36'
+            />
             <Navbar />
             <Banner />
             <Featured />

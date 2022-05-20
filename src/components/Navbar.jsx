@@ -5,6 +5,7 @@ import { ChevronDownIcon } from '@heroicons/react/solid';
 import { Link } from 'react-scroll';
 import { moreBylesbrowns } from '../assets/data/navbar';
 import MobileMenu from './MobileMenu';
+import logo from '../assets/images/logo-alt-removebg-cropped.png';
 
 function classNames(...classes) {
     return classes.filter(Boolean).join(' ');
@@ -14,32 +15,32 @@ export default function Navbar() {
     return (
         <Popover className='relative bg-black text-white'>
             <div className='border-b-2 border-yellow-400'>
-                <div className='flex justify-between items-center px-4 sm:px-6 py-6 md:justify-start md:space-x-10'>
+                <div className='flex items-center justify-between px-4 py-6 sm:px-6 md:justify-start md:space-x-10'>
                     <div className='flex justify-start lg:w-0 lg:flex-1'>
                         <Link
-                            className='text-2xl font-raleway cursor-pointer'
+                            className='cursor-pointer font-raleway text-2xl'
                             to='home'
                             smooth
                             duration={500}
                         >
-                            Quotable Club
+                            <img src={logo} alt='logo' className='w-52' />
                         </Link>
                     </div>
-                    <div className='-mr-2 -my-2 md:hidden'>
-                        <Popover.Button className='bg-black rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-yellow-500'>
+                    <div className='-my-2 -mr-2 md:hidden'>
+                        <Popover.Button className='inline-flex items-center justify-center rounded-md bg-black p-2 text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-yellow-500'>
                             <span className='sr-only'>Open menu</span>
                             <MenuIcon className='h-6 w-6' aria-hidden='true' />
                         </Popover.Button>
                     </div>
                     <Popover.Group
                         as='nav'
-                        className='hidden md:flex space-x-10'
+                        className='hidden space-x-10 md:flex'
                     >
                         <Link
                             to='quote'
                             smooth
                             duration={500}
-                            className='text-base cursor-pointer font-medium text-white hover:text-yellow-400 transition-colors duration-150 ease-in-out'
+                            className='cursor-pointer text-base font-medium text-white transition-colors duration-150 ease-in-out hover:text-yellow-400'
                         >
                             LES BROWN QUOTE
                         </Link>
@@ -51,7 +52,7 @@ export default function Navbar() {
                                             open
                                                 ? 'text-yellow-400'
                                                 : 'text-white',
-                                            'group rounded-md inline-flex items-center text-base font-medium hover:text-yellow-400 focus:outline-none'
+                                            'group inline-flex items-center rounded-md text-base font-medium hover:text-yellow-400 focus:outline-none'
                                         )}
                                     >
                                         <span>More By Les Brown</span>
@@ -75,15 +76,15 @@ export default function Navbar() {
                                         leaveFrom='opacity-100 translate-y-0'
                                         leaveTo='opacity-0 translate-y-1'
                                     >
-                                        <Popover.Panel className='absolute z-10 -ml-4 mt-3 transform px-2 w-screen max-w-md sm:px-0 lg:ml-0 lg:left-1/2 lg:-translate-x-1/2'>
-                                            <div className='rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden'>
+                                        <Popover.Panel className='absolute z-10 -ml-4 mt-3 w-screen max-w-md transform px-2 sm:px-0 lg:left-1/2 lg:ml-0 lg:-translate-x-1/2'>
+                                            <div className='overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5'>
                                                 <div className='relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8'>
                                                     {moreBylesbrowns.map(
                                                         item => (
                                                             <Link
                                                                 key={item.name}
                                                                 to={item.href}
-                                                                className='-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50'
+                                                                className='-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50'
                                                                 smooth
                                                                 duration={500}
                                                             >
@@ -107,7 +108,7 @@ export default function Navbar() {
 
                         <Link
                             to='stuck'
-                            className='text-base cursor-pointer  font-medium text-white hover:text-yellow-400 transition-colors duration-150 ease-in-out'
+                            className='cursor-pointer text-base  font-medium text-white transition-colors duration-150 ease-in-out hover:text-yellow-400'
                             smooth
                             duration={500}
                         >
@@ -115,7 +116,7 @@ export default function Navbar() {
                         </Link>
                         <Link
                             to='clothing'
-                            className='text-base  cursor-pointer font-medium text-white hover:text-yellow-400 transition-colors duration-150 ease-in-out'
+                            className='cursor-pointer  text-base font-medium text-white transition-colors duration-150 ease-in-out hover:text-yellow-400'
                             smooth
                             duration={500}
                         >
